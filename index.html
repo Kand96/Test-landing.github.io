@@ -39,13 +39,13 @@
     </div>
   </header>
   <section class="hero">
+    <div class="hero__background-image">
+      <picture>
+        <source srcset="img/Bg_mobile.png 1x" media="(max-width: 375px)">
+        <img src="img/Bg.png" alt="background">
+      </picture>
+    </div>
     <div class="hero__container">
-      <div class="hero__background-image">
-        <picture>
-          <source srcset="img/Bg_mobile.png 1x" media="(max-width: 375px)">
-          <img src="img/Bg.png" alt="background">
-        </picture>
-      </div>
       <div class="hero__wrapper">
         <h1 class="hero__title">Device Authentication</h1>
         <p class="hero__description">SALT Group is a world leader in authen&shytication and security. We have <br />
@@ -56,8 +56,7 @@
       <div class="hero__logo-container">
         <picture>
           <source srcset="img/Twitter_mobile1x.png 1x, img/Twitter_mobile2x.png" media="(max-width: 375px)">
-          <img src="img/Twitter_dekstop1x.png" srcset="img/Twitter_dekstop2x.png 2x" alt="twitter logo"
-            class="hero__logo">
+          <img src="img/Twitter_dekstop1x.png" srcset="img/Twitter_dekstop2x.png 2x" alt="twitter logo">
         </picture>
       </div>
       <div class="hero__icons-container">
@@ -78,7 +77,7 @@
     </div>
     <div class="hero__text">FIND OUT MORE</div>
     <div class="hero__icon-container">
-      <a href="#icon"><img src="img/Union1x.png" srcset="img/Union2x.png 2x" alt="icon" class="hero__logo"></a>
+      <a href="#icon"><img src="img/Union1x.png" srcset="img/Union2x.png 2x" alt="icon"></a>
     </div>
   </section>
   <section class="statistics">
@@ -161,16 +160,20 @@
   </section>
   <section class="product">
     <div class="product__container">
-      <h2>Product Spotlight</h2>
-      <p class="product__description">Salt mSign Connected Token is a <wbr>contemporary mobile security 2FA <wbr>token for
-        authentication of user
-        identity
-        and
-        verification of transactions <wbr>independent of the delivery channel that initiated the request.</p>
-      <button class="product__button">MORE INFO</button>
-      <iframe src="https://www.youtube.com/embed/HddTrOeKqQQ" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <div class="product__container-left">
+        <h2>Product Spotlight</h2>
+        <p class="product__description">Salt mSign Connected Token is a <wbr>contemporary mobile security 2FA <wbr>token for
+                authentication of user
+                identity
+                and
+                verification of transactions <wbr>independent of the delivery channel that initiated the request.</p>
+        <button class="product__button">MORE INFO</button>
+      </div>
+      <div class="product__container-right">
+        <iframe src="https://www.youtube.com/embed/HddTrOeKqQQ" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </div>
   </section>
   <section class="contacts">

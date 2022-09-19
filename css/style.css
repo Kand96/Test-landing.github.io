@@ -32,11 +32,6 @@ img {
   margin-bottom: 129px;
 }
 
-.header__image-container {
-  width: 78px;
-  height: 100px;
-}
-
 .header__hamburger-menu input,
 .header__hamburger-menu label {
   display: none;
@@ -69,8 +64,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 306px;
-  padding-right: 54px;
+  padding-left: 19.1%;
+  padding-right: 3.4%;
 }
 
 .hero__title {
@@ -90,8 +85,6 @@ img {
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 0;
-  width: 100%;
   height: 810px;
 }
 
@@ -110,9 +103,7 @@ img {
 }
 
 .hero__logo-container {
-  width: 151px;
-  height: 124px;
-  margin-right: 111px;
+  margin-right: 6.9%;
   margin-top: 10px;
 }
 
@@ -133,14 +124,8 @@ img {
 }
 
 .hero__icon-container {
-  width: 62px;
-  height: 71px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero__logo {
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .statistics {
@@ -152,8 +137,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 346px;
-  padding-right: 355px;
+  padding-left: 21.6%;
+  padding-right: 22.2%;
 }
 
 .statistics__theft,
@@ -189,7 +174,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 297px 124px 304px;
+  padding: 120px 18.6% 124px 19%;
   gap: 68px;
 }
 
@@ -227,79 +212,68 @@ img {
   align-items: flex-start;
 }
 
-@media (min-width: 376px) {
-  .aboutUs__device {
-    margin-top: 3px;
-    width: 271px;
-    height: 316px;
-  }
+.aboutUs__device {
+  margin-top: 3px;
+  width: 271px;
+  height: 316px;
+}
 
-  .aboutUs__user {
-    margin-top: 3px;
-    width: 241px;
-    height: 263px;
-  }
+.aboutUs__user {
+  margin-top: 3px;
+  width: 241px;
+  height: 263px;
+}
 
-  .aboutUs__transaction {
-    width: 281px;
-    height: 319px;
-  }
+.aboutUs__transaction {
+  width: 281px;
+  height: 319px;
+}
 
-  .aboutUs__contemporary {
-    width: 271px;
-  }
+.aboutUs__contemporary {
+  width: 271px;
+}
 
-  .aboutUs__hsm {
-    width: 241px;
-    margin-top: 13px;
-  }
+.aboutUs__hsm {
+  width: 241px;
+  margin-top: 13px;
+}
 
-  .aboutUs__cloud {
-    width: 266px;
-    margin-top: 32px;
-  }
+.aboutUs__cloud {
+  width: 266px;
+  margin-top: 32px;
 }
 
 .aboutUs__device img {
   width: 142px;
   height: 146px;
   margin-left: 39px;
-  margin-right: 90px;
 }
 
 .aboutUs__user img {
   width: 160px;
-  height: 150px;
   margin-left: 40px;
-  margin-right: 41px;
 }
 
 .aboutUs__transaction img {
   width: 150px;
-  height: 150px;
   margin-left: 57px;
-  margin-right: 74px;
 }
 
 .aboutUs__contemporary img {
   width: 132px;
-  height: 139px;
   margin-left: 56px;
-  margin-right: 83px;
 }
 
 .aboutUs__hsm img {
   width: 191px;
   height: 127px;
   margin-left: 37px;
-  margin-right: 13px;
 }
 
 .aboutUs__cloud img {
   width: 210px;
   height: 108px;
   margin-left: 29px;
-  margin-right: 27px;
 }
 
 .tile h3 {
@@ -329,17 +303,20 @@ img {
 }
 
 .product__container {
-  padding: 114px 137px 97px 160px;
-  height: 655px;
+  padding: 114px 8.5% 97px 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product__container-left {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .product__description {
   width: 455px;
   word-wrap: break-word;
-  margin-right: 124px;
 }
 
 .product__container h2 {
@@ -370,25 +347,28 @@ img {
   cursor: pointer;
 }
 
-.product__container iframe {
+.product__container-right {
   width: 724px;
   height: 444px;
+}
+
+.product__container iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .contacts__background-image {
   position: absolute;
   z-index: -1;
   background-color: #232323;
-  width: 100%;
   height: 707px;
 }
 
 .contacts__container {
   margin-bottom: 97px;
-  padding: 120px 169px 120px 200px;
+  padding: 120px 10.5% 120px 12.5%;
   display: flex;
   justify-content: space-between;
-  gap: 227px;
 }
 
 .contacts__title h2 {
@@ -396,6 +376,10 @@ img {
   font-weight: 700;
   font-size: 55px;
   line-height: 55px;
+}
+
+.contacts__form {
+  width: 640px;
 }
 
 .contacts__form>div {
@@ -409,6 +393,7 @@ img {
 }
 
 .contacts__form form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -424,6 +409,7 @@ img {
 .contacts__name {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -449,23 +435,31 @@ img {
   opacity: 0.5;
 }
 
+.contacts__first-name {
+  width: 48.1%;
+}
+
 .contacts__first-name input {
-  width: 308px;
+  width: 100%;
   padding: 9px 13px;
 }
 
+.contacts__last-name {
+  width: 48.75%;
+}
+
 .contacts__last-name input {
-  width: 312px;
+  width: 100%;
   padding: 9px 13px;
 }
 
 .contacts__email input {
-  width: 640px;
+  width: 100%;
   padding: 9px 13px;
 }
 
 .contacts__message textarea {
-  width: 640px;
+  width: 100%;
   height: 96px;
   padding: 15px 13px;
 }
@@ -488,15 +482,16 @@ img {
 }
 
 .footer__container {
-  padding: 56px 32px 32px 224px;
+  padding: 56px 2% 32px 14%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__news {
-  margin-right: 120px;
+  margin-bottom: 17px;
+  margin-right: 7.5%;
   background: #FFFFFF;
-  width: 299px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -510,7 +505,7 @@ img {
 .footer__news-description {
   display: flex;
   flex-direction: column;
-  padding: 20px 48px 19px 31px;
+  padding: 20px 16% 19px 10.4%;
   gap: 16px;
 }
 
@@ -572,11 +567,11 @@ img {
 }
 
 .footer__links {
-  margin-inline: 132px;
+  margin-inline: 8.25%;
 }
 
 .footer__contact {
-  margin-right: 116px;
+  margin-right: 7.25%;
 }
 
 .footer__navigation img,
@@ -620,11 +615,11 @@ img {
 }
 
 .contact__item-1 {
-  width: 166px;
+  width: 79.4%;
 }
 
 .contact__item-2 {
-  width: 209px;
+  width: 100%;
 }
 
 .contact__item-1,
@@ -636,11 +631,7 @@ img {
 .footer__logo {
   display: flex;
   align-items: flex-end;
-}
-
-.footer__logo img {
-  width: 75px;
-  height: 86px;
+  align-self: flex-end;
 }
 
 .copyright {
@@ -677,6 +668,10 @@ img {
   .hero,
   .hero__logo-container,
   .tile img,
+  .aboutUs__device,
+  .aboutUs__user,
+  .aboutUs__hsm,
+  .aboutUs__cloud,
   .product__description,
   .product__container h2,
   .contacts__title h2,
@@ -691,14 +686,9 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 28px;
+    padding-inline: 7.5%;
     padding-top: 28px;
     margin-bottom: 55px;
-  }
-
-  .header__image-container {
-    width: 39px;
-    height: 50px;
   }
 
   .header__hamburger-menu input,
@@ -809,13 +799,11 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-inline: 28px;
+    padding-inline: 7.5%;
   }
 
   .hero__logo-container {
     order: -1;
-    width: 100px;
-    height: 84px;
     align-self: center;
     margin-bottom: 64px;
   }
@@ -827,7 +815,6 @@ img {
   }
 
   .hero__description {
-    width: 319px;
     margin: 16px 0 28px;
     font-weight: 600;
     font-size: 16px;
@@ -853,7 +840,7 @@ img {
   }
 
   .statistics {
-    padding: 80px 84px 100px;
+    padding: 80px 22.4% 100px;
   }
 
   .statistics__container {
@@ -879,7 +866,7 @@ img {
   }
 
   .aboutUs__container {
-    padding: 48px 40px 48px 52px;
+    padding: 48px 10.7% 48px 13.9%;
     gap: 40px;
   }
 
@@ -893,38 +880,52 @@ img {
   }
 
   .aboutUs__bottom-container {
+    width: 272px;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 68px;
+    gap: 60px;
   }
 
-  .tile img {
-    align-self: center;
+  .aboutUs__device,
+  .aboutUs__user,
+  .aboutUs__transaction {
+    height: auto;
   }
 
-  .tile h3 {
-    margin-top: 28px;
-    margin-bottom: 16px;
+  .aboutUs__transaction {
+    width: auto;
   }
 
   .aboutUs__device img {
     width: 106px;
     height: 109px;
+    margin-left: 83px;
   }
 
   .aboutUs__user img {
     width: 106px;
     height: 100px;
+    margin-left: 83px;
   }
 
   .aboutUs__transaction img {
     width: 100px;
     height: 100px;
+    margin-left: 86px;
   }
 
   .aboutUs__contemporary img {
     width: 100px;
     height: 105px;
+    margin-left: 86px;
+  }
+
+  .aboutUs__hsm img {
+    margin-left: 41px;
+  }
+
+  .aboutUs__cloud img {
+    margin-left: 31px;
   }
 
   .product__container {
