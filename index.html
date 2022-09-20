@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="fonts/ProximaNova/ProximaNova.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,43 +43,35 @@
   <section class="hero">
     <div class="hero__background-image">
       <picture>
-        <source srcset="img/Bg_mobile.png 1x" media="(max-width: 375px)">
-        <img src="img/Bg.png" alt="background">
+        <source srcset="img/Bg_mobile1x.png 1x, img/Bg_mobile2x.png 2x" media="(max-width: 375px)">
+        <img src="img/Bg1x.png" srcset="img/Bg2x.png 2x" alt="background">
       </picture>
     </div>
     <div class="hero__container">
       <div class="hero__wrapper">
         <h1 class="hero__title">Device Authentication</h1>
-        <p class="hero__description">SALT Group is a world leader in authen&shytication and security. We have <br />
+        <p class="hero__description">SALT Group is a world leader in authen&shy;tication and security. We have <br />
           a range of services to improve user authentication. <br />
           Discover the possibilities with SALT.</p>
         <button class="hero__button">GET STARTED</button>
       </div>
       <div class="hero__logo-container">
         <picture>
-          <source srcset="img/Twitter_mobile1x.png 1x, img/Twitter_mobile2x.png" media="(max-width: 375px)">
+          <source srcset="img/Twitter_mobile1x.png 1x, img/Twitter_mobile2x.png 2x" media="(max-width: 375px)">
           <img src="img/Twitter_dekstop1x.png" srcset="img/Twitter_dekstop2x.png 2x" alt="twitter logo">
         </picture>
       </div>
       <div class="hero__icons-container">
-        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.5 0L19 5.5V16.5L9.5 22L0 16.5V5.5L9.5 0Z" fill="#FF8B00" />
-        </svg>
-        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M9.5 1.90526L1.64545 6.45263V15.5474L9.5 20.0947L17.3546 15.5474V6.45263L9.5 1.90526ZM19 5.5L9.5 0L0 5.5V16.5L9.5 22L19 16.5V5.5Z"
-            fill="white" />
-        </svg>
-        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M9.5 1.90526L1.64545 6.45263V15.5474L9.5 20.0947L17.3546 15.5474V6.45263L9.5 1.90526ZM19 5.5L9.5 0L0 5.5V16.5L9.5 22L19 16.5V5.5Z"
-            fill="white" />
-        </svg>
+        <img src="img/Polygon1x.png" srcset="img/Polygon2x.png 2x" alt="Polygon">
+        <img src="img/Polygon(Stroke)1x.png" srcset="img/Polygon(Stroke)2x.png 2x" alt="Polygon(Stroke)">
+        <img src="img/Polygon(Stroke)1x.png" srcset="img/Polygon(Stroke)2x.png 2x" alt="Polygon(Stroke)">
       </div>
     </div>
     <div class="hero__text">FIND OUT MORE</div>
     <div class="hero__icon-container">
-      <a href="#icon"><img src="img/Union1x.png" srcset="img/Union2x.png 2x" alt="icon"></a>
+      <a href="#icon">
+        <img src="img/Union1x.png" srcset="img/Union2x.png 2x" alt="icon">
+      </a>
     </div>
   </section>
   <section class="statistics">
@@ -101,13 +94,14 @@
     <div class="aboutUs__container">
       <div class="aboutUs__top-container">
         <h2>What We Do</h2>
-        <picture>
-          <img src="img/Union11x.png" srcset="img/Union12x.png 2x" alt="corner">
-        </picture>
+        <img src="img/Union11x.png" srcset="img/Union12x.png 2x" alt="corner">
       </div>
       <div class="aboutUs__bottom-container">
         <div class="aboutUs__device tile">
-          <img src="img/device.png" alt="device">
+          <picture>
+            <source srcset="img/device_mobile1x.png 1x, img/device_mobile2x.png 2x" media="(max-width: 375px)">
+            <img src="img/device1x.png" srcset="img/device2x.png 2x" alt="device">
+          </picture>
           <h3>Device Authentication</h3>
           <p>Hardware-based device fingerprinting resilient to cloning, malware and device jailbreak/root.
             Hardware-level control
@@ -115,13 +109,20 @@
           </p>
         </div>
         <div class="aboutUs__user tile">
-          <img src="img/user.png" alt="user">
+          <picture>
+            <source srcset="img/user_mobile1x.png 1x, img/user_mobile2x.png 2x" media="(max-width: 375px)">
+            <img src="img/user1x.png" srcset="img/user2x.png 2x" alt="user">
+          </picture>
           <h3>User Authentication</h3>
           <p>Verify the identity of users for access control with contemporary biometric connected MFA security tokens.
           </p>
         </div>
         <div class="aboutUs__transaction tile">
-          <img src="img/transaction.png" alt="transaction">
+          <picture>
+            <source srcset="img/transaction_mobile1x.png 1x, img/transaction_mobile2x.png 2x"
+              media="(max-width: 375px)">
+            <img src="img/transaction1x.png" srcset="img/transaction2x.png 2x" alt="transaction">
+          </picture>
           <h3>Transaction Authentication</h3>
           <p>High assurance out-of-band authentication of high impact transactions and instructions initiated through
             electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection
@@ -131,7 +132,11 @@
           </p>
         </div>
         <div class="aboutUs__contemporary tile">
-          <img src="img/contemporary.png" alt="contemporary">
+          <picture>
+            <source srcset="img/contemporary_mobile1x.png 1x, img/contemporary_mobile2x.png 2x"
+              media="(max-width: 375px)">
+            <img src="img/contemporary1x.png" srcset="img/contemporary2x.png 2x" alt="contemporary">
+          </picture>
           <h3>Contemporary authentication methods</h3>
           <p>Echidna authentication server to enable adaptive risk-based approach to security through a range of methods
             for
@@ -142,7 +147,7 @@
             context and addition of PIN, Fingerprint and other biometrics.</p>
         </div>
         <div class="aboutUs__hsm tile">
-          <img src="img/hsm.png" alt="hsm">
+          <img src="img/hsm1x.png" srcset="img/hsm2x.png 2x" alt="hsm">
           <h3>HSM Solutions</h3>
           <p>Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key
             ceremony
@@ -150,7 +155,7 @@
           </p>
         </div>
         <div class="aboutUs__cloud tile">
-          <img src="img/cloud.png" alt="cloud">
+          <img src="img/cloud1x.png" srcset="img/cloud2x.png 2x" alt="cloud">
           <h3>Cloud & IoT Security</h3>
           <p>Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support
             cloud
@@ -169,7 +174,7 @@
                 verification of transactions <wbr>independent of the delivery channel that initiated the request.</p>
       <button class="product__button">MORE INFO</button>
       <div>
-        <iframe src="https://www.youtube.com/embed/HddTrOeKqQQ" frameborder="0"
+        <iframe src="https://www.youtube.com/embed/HddTrOeKqQQ" style="border:0;"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
@@ -178,8 +183,8 @@
   <section class="contacts">
     <div class="contacts__background-image">
       <picture>
-        <source srcset="img/Group1_mobile.png" media="(max-width: 375px)">
-        <img src="img/Group1.png" alt="Group1">
+        <source srcset="img/Group_mobile1x.png 1x, img/Group_mobile2x.png 2x" media="(max-width: 375px)">
+        <img src="img/Group1x.png" srcset="img/Group2x.png 2x" alt="Group1">
       </picture>
     </div>
     <div class="contacts__container">
@@ -190,7 +195,7 @@
         <div>
           <h3>Contact us</h3>
         </div>
-        <form method="post" action="">
+        <form method="post">
           <div class="contacts__name">
             <div class="contacts__first-name">
               <h4>First Name</h4>
@@ -202,8 +207,8 @@
             </div>
           </div>
           <div class="contacts__email">
-            <h4>Email</h4>
-            <input type="email" required placeholder="Email">
+            <h4>Email Address</h4>
+            <input type="email" required placeholder="Email Address">
           </div>
           <div class="contacts__message">
             <h4>Your message</h4>
@@ -221,7 +226,7 @@
       <div class="footer__news">
         <div class="footer__news-logo">
           <div class="news__logo">
-            <img src="img/twitter_logo.png" alt="twitter_logo">
+            <img src="img/twitter_logo1x.png" srcset="img/twitter_logo2x.png 2x" alt="twitter_logo">
           </div>
           <div class="news__title">
             <h3>@saltgroup</h3>
@@ -232,7 +237,7 @@
           <div>
             <h4>Experience more with expanded Tweets</h4>
             <a href="#">http://testing123.com.au</a>
-            <time>18 hours ago</time>
+            <time datetime="2016-06-13">18 hours ago</time>
           </div>
           <div>
             <h4>Tailored Trends bring you closer</h4>
@@ -246,7 +251,7 @@
         </div>
       </div>
       <div class="footer__navigation">
-        <h3><img src="img/Polygon4.png">Navigation</h3>
+        <h3><img src="img/Polygon4_1x.png" srcset="img/Polygon4_2x.png 2x" alt="Polygon4">Navigation</h3>
         <ul class="footer__navigation-item">
           <li class="navigation__item"><a href="#" class="navigation__link">HOME</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">PRODUCTS</a></li>
@@ -257,7 +262,7 @@
         </ul>
       </div>
       <div class="footer__links">
-        <h3><img src="img/Polygon4.png">LINKS</h3>
+        <h3><img src="img/Polygon4_1x.png" srcset="img/Polygon4_2x.png 2x" alt="Polygon4">LINKS</h3>
         <ul class="footer__links-item">
           <li class="links__item"><a href="#" class="links">DISCLAIMER</a></li>
           <li class="links__item"><a href="#" class="links">LEGAL</a></li>
@@ -266,7 +271,7 @@
         </ul>
       </div>
       <div class="footer__contact">
-        <h3><img src="img/Polygon4.png">CONTACT SALES</h3>
+        <h3><img src="img/Polygon4_1x.png" srcset="img/Polygon4_2x.png 2x" alt="Polygon4">CONTACT SALES</h3>
         <ul class="footer__contact-item">
           <li class="contact__item-1">
             <h4>PHONE:</h4>
@@ -279,11 +284,18 @@
         </ul>
       </div>
       <div class="footer__logo">
-        <img src="img/Logotype.png" alt="footer_logo">
+        <picture>
+          <source srcset="img/Logotype_mobile1x.png 1x, img/Logotype_mobile2x.png 2x" media="(max-width: 375px)">
+          <img src="img/Logotype1x.png" srcset="img/Logotype2x.png 2x" alt="footer_logo">
+        </picture>
       </div>
     </div>
     <div class="copyright">
-      <h4>© 2017 SALT GROUP <img src="img/Polygon4.png" alt=""> ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</h4>
+      <h4>© 2017 SALT GROUP <picture>
+          <source srcset="img/Polygon3_mobile1x.png 1x, img/Polygon3_mobile2x.png 2x" media="(max-width: 375px)"><img
+            src="img/Polygon3_1x.png" srcset="img/Polygon3_2x.png 2x" alt="Polygon4.png">
+        </picture> ALL RIGHTS RESERVED. WEBSITE BY DORNE
+        CREATIVE.</h4>
     </div>
   </footer>
 </body>
