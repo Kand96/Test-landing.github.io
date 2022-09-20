@@ -66,6 +66,7 @@ img {
   align-items: center;
   padding-left: 19.1%;
   padding-right: 3.4%;
+  margin-bottom: 135px;
 }
 
 .hero__title {
@@ -121,13 +122,18 @@ img {
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
-  margin-top: 135px;
   margin-bottom: 19px;
 }
 
 .hero__icon-container {
+  height: 71px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.hero__icon-container a {
+  height: 71px;
 }
 
 .statistics {
@@ -377,6 +383,7 @@ img {
 }
 
 .contacts__container {
+  height: 707px;
   margin-bottom: 97px;
   padding: 120px 10.5% 120px 12.5%;
   display: flex;
@@ -452,6 +459,7 @@ img {
 }
 
 .contacts__first-name input {
+  height: 40px;
   width: 100%;
   padding: 9px 13px;
 }
@@ -461,11 +469,13 @@ img {
 }
 
 .contacts__last-name input {
+  height: 40px;
   width: 100%;
   padding: 9px 13px;
 }
 
 .contacts__email input {
+  height: 40px;
   width: 100%;
   padding: 9px 13px;
 }
@@ -589,8 +599,7 @@ img {
 .footer__navigation img,
 .footer__links img,
 .footer__contact img {
-  width: 17.5px;
-  height: 20px;
+  width: auto;
   margin-right: 8px;
 }
 
@@ -670,412 +679,4 @@ img {
   text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
-}
-
-/* Адаптив под Мобилку */
-
-@media (max-width: 375px) {
-
-  .header__navbar,
-  .hero,
-  .hero__logo-container,
-  .tile img,
-  .aboutUs__device,
-  .aboutUs__user,
-  .aboutUs__hsm,
-  .aboutUs__cloud,
-  .product__description,
-  .product__container h2,
-  .contacts__title h2,
-  .contacts__button,
-  .footer__news,
-  .footer__links,
-  .footer__contact {
-    margin: 0;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 7.5%;
-    padding-top: 28px;
-    margin-bottom: 55px;
-  }
-
-  .header__hamburger-menu input,
-  .header__hamburger-menu label {
-    display: block;
-  }
-
-  .header__hamburger-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-  }
-
-  #menu__toggle {
-    opacity: 0;
-  }
-
-  .menu__btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 22px;
-    cursor: pointer;
-  }
-
-  .menu__btn>span,
-  .menu__btn>span::before,
-  .menu__btn>span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2.66667px;
-    background: #FFFFFF;
-    transition-duration: .25s;
-  }
-
-  .menu__btn>span::before {
-    content: '';
-    top: -8px;
-  }
-
-  .menu__btn>span::after {
-    content: '';
-    top: 8px;
-  }
-
-  .header__navbar {
-    gap: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: fixed;
-    visibility: hidden;
-    left: 175px;
-    top: 0;
-    width: 200px;
-    height: 100%;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    transition-duration: .25s;
-    overflow: auto;
-  }
-
-  .navbar__link {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .navbar__link:hover {
-    background-color: #CFD8DC;
-  }
-
-  #menu__toggle:checked~.menu__btn>span {
-    transform: rotate(45deg);
-  }
-
-  #menu__toggle:checked~.menu__btn>span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-
-  #menu__toggle:checked~.menu__btn>span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-
-  #menu__toggle:checked~.header__navbar {
-    visibility: visible;
-    left: 0;
-  }
-
-  .hero {
-    padding-bottom: 53px;
-  }
-
-  .hero__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-inline: 7.5%;
-  }
-
-  .hero__logo-container {
-    order: -1;
-    align-self: center;
-    margin-bottom: 64px;
-  }
-
-  .hero__title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .hero__description {
-    margin: 16px 0 28px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    word-wrap: break-word;
-  }
-
-  .hero__background-image {
-    height: 789px;
-  }
-
-  .hero__icons-container {
-    display: none;
-  }
-
-  .hero__text {
-    text-align: center;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 68px;
-    margin-bottom: 19px;
-  }
-
-  .statistics {
-    padding: 80px 22.4% 100px;
-  }
-
-  .statistics__container {
-    flex-direction: column;
-    gap: 68px;
-    padding: 0;
-  }
-
-  .statistics__theft,
-  .statistics__transactions,
-  .statistics__fraud {
-    gap: 12px;
-  }
-
-  .statistics h2 {
-    font-size: 42px;
-    line-height: 50px;
-  }
-
-  .statistics p {
-    font-size: 13px;
-    line-height: 16px;
-  }
-
-  .aboutUs__container {
-    padding: 48px 10.7% 48px 13.9%;
-    gap: 40px;
-  }
-
-  .aboutUs__top-container {
-    gap: 6px;
-  }
-
-  .aboutUs__top-container h2 {
-    padding-top: 14px;
-    font-size: 34px;
-  }
-
-  .aboutUs__bottom-container {
-    width: 272px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 60px;
-  }
-
-  .aboutUs__device,
-  .aboutUs__user,
-  .aboutUs__transaction {
-    height: auto;
-  }
-
-  .aboutUs__transaction {
-    width: auto;
-  }
-
-  .aboutUs__device img {
-    width: 106px;
-    height: 109px;
-    margin-left: 83px;
-  }
-
-  .aboutUs__user img {
-    width: 106px;
-    height: 100px;
-    margin-left: 83px;
-  }
-
-  .aboutUs__transaction img {
-    width: 100px;
-    height: 100px;
-    margin-left: 86px;
-  }
-
-  .aboutUs__contemporary img {
-    width: 100px;
-    height: 105px;
-    margin-left: 86px;
-  }
-
-  .aboutUs__hsm img {
-    margin-left: 41px;
-  }
-
-  .aboutUs__cloud img {
-    margin-left: 31px;
-  }
-
-  .product__container {
-    height: 661px;
-    padding: 100px 7.5% 97px;
-  }
-
-  .product__description {
-    width: 100%;
-  }
-
-  .product__container h2 {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 16px;
-  }
-
-  .product__container p {
-    padding: 0;
-    margin-bottom: 28px;
-  }
-
-  .product__button {
-    align-self: center;
-    order: 1;
-  }
-
-  .product__container div {
-    width: 319px;
-    height: 196px;
-    margin-bottom: 40px;
-  }
-
-  .contacts__background-image {
-    height: 717px;
-  }
-
-  .contacts__container {
-    padding: 40px 9.6% 40px 7.5%;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 48px;
-  }
-
-  .contacts__title h2 {
-    font-size: 34px;
-    line-height: 40px;
-  }
-
-  .contacts__form h3 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .contacts__form {
-    width: 100%;
-  }
-
-  .contacts__form form {
-    gap: 20px;
-  }
-
-  .contacts__name {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-  }
-
-  .contacts__first-name,
-  .contacts__last-name {
-    width: 100%;
-  }
-
-  .contacts__message+div {
-    align-self: center;
-    margin-top: 20px;
-  }
-
-  .footer__container {
-    padding: 60px 10.1% 80px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer__news {
-    width: 100%;
-    margin-bottom: 60px;
-  }
-
-  .footer__links,
-  .footer__navigation {
-    width: 110px;
-  }
-
-  .footer__navigation {
-    margin-right: 17.4%;
-    margin-bottom: 48px;
-  }
-
-  .footer__contact {
-    flex-basis: 71%;
-    margin-bottom: 80px;
-  }
-
-  .footer__contact h3 {
-    justify-content: center;
-    padding-bottom: 8px;
-  }
-
-  .footer__navigation-item,
-  .footer__links-item,
-  .footer__contact-item {
-    margin-top: 12px;
-    gap: 6px;
-  }
-
-  .footer__logo {
-    width: 88px;
-    height: 100px;
-  }
-
-  .footer__logo img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .copyright {
-    padding: 37px 10.9% 38px 10.1%;
-  }
-
-  .copyright img {
-    width: 6px;
-    height: 8px;
-  }
-
-  .copyright h4 {
-    width: auto;
-    font-size: 8px;
-    opacity: .8;
-  }
 }
